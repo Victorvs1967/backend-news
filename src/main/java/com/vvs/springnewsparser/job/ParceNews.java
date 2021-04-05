@@ -22,7 +22,7 @@ public class ParceNews {
     @Autowired
     NewsService newsService;
 
-    @Scheduled(fixedDelay = 10000)
+    @Scheduled(fixedDelay = 600000)
     public void parseNewNews() {
         String url = "https://vesti.ua/vse-novosti";
 
