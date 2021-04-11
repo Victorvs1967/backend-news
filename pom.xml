@@ -16,6 +16,19 @@
 	<properties>
 		<java.version>8</java.version>
 	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>libraries-bom</artifactId>
+			<version>3.4.0</version>
+			<type>pom</type>
+			<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -43,7 +56,12 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-				
+
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-build</artifactId>
+		</dependency>	
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
