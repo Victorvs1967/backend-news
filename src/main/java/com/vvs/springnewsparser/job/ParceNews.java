@@ -38,7 +38,7 @@ public class ParceNews {
                 String title = post.text();
                 String href = post.attr("href");
                 if (!newsService.isExist(title)) {
-                    if (title.toLowerCase().contains("погода") || href.contains("pogoda")) {
+                    if (title.toLowerCase().contains("погод") || href.contains("pogod")) {
                         News obj = new News();
                         obj.setTitle(title);
                         obj.setUrl(href);
