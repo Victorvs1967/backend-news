@@ -54,8 +54,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
 
 
-const REST_API = 'http://localhost:8080/news';
-// const REST_API = 'https://news-parser-weather-okre2o5mia-ey.a.run.app/news"';
+// const REST_API = 'http://localhost:8080/news';
+const REST_API = 'https://parser-weather.herokuapp.com/news';
 class PostsService {
     // private postUrl = "http://localhost:8080/news";
     constructor(http) {
