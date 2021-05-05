@@ -57,7 +57,6 @@ __webpack_require__.r(__webpack_exports__);
 // const REST_API = 'http://localhost:8080/news';
 const REST_API = 'https://parser-weather.herokuapp.com/news';
 class PostsService {
-    // private postUrl = "http://localhost:8080/news";
     constructor(http) {
         this.http = http;
         this.postUrl = REST_API;
